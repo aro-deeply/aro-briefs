@@ -1,0 +1,23 @@
+/* ARO Case Brief reader tools */
+mark.rd-mark{background:#F3E3B5;color:inherit;padding:0 1px;border-radius:2px;cursor:pointer;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+mark.rd-mark.has-note{background:#EBD9A6}
+.rd-tag{font:inherit;font-size:.72rem;font-weight:700;letter-spacing:.06em;color:#5E4A36;background:#F2EAE0;border:0;border-radius:999px;padding:1px 8px;margin:0 4px;vertical-align:middle;cursor:pointer;line-height:1.5}
+.rd-note{display:none;margin:6px 0 10px;padding:8px 12px;border-left:2px solid #B48A5A;background:#FAF6EE;color:#57534E;font-size:.9rem;line-height:1.6;white-space:pre-wrap;border-radius:0 4px 4px 0}
+.rd-note.open{display:block}
+.rd-float{position:absolute;display:none;gap:4px;background:#1C1917;border-radius:4px;padding:4px;z-index:50;box-shadow:0 2px 6px rgba(28,25,23,.15),0 18px 40px rgba(28,25,23,.12)}
+.rd-float.show{display:flex}
+.rd-float button{font:inherit;font-size:.8125rem;font-weight:500;color:#FAFAF7;background:transparent;border:0;padding:6px 12px;border-radius:2px;cursor:pointer}
+.rd-float button:hover{background:#57534E}
+.rd-bar{position:fixed;left:0;right:0;bottom:0;display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding:8px 16px;background:rgba(250,250,247,.96);border-top:1px solid #E7E5E4;font-size:.8125rem;color:#6B625C;z-index:40;backdrop-filter:blur(6px)}
+.rd-bar .rd-title{font-weight:700;letter-spacing:.06em;color:#1C1917;margin-right:4px}
+.rd-bar .rd-title em{font-style:normal;color:#8B7355;font-weight:500;margin-left:4px}
+.rd-bar button{font:inherit;font-size:.8125rem;font-weight:500;color:#1C1917;background:#fff;border:1px solid #1C1917;border-radius:2px;padding:6px 12px;cursor:pointer;transition:all .15s ease-out}
+.rd-bar button:hover{background:#1C1917;color:#FAFAF7}
+.rd-bar button.rd-quiet{border-color:#E7E5E4;color:#6B625C}
+.rd-bar button.rd-quiet:hover{background:#F2EFE9;color:#1C1917}
+.rd-bar .rd-hint{margin-left:auto;color:#9A938D}
+#rd-toast{position:fixed;left:50%;bottom:64px;transform:translateX(-50%) translateY(8px);background:#1C1917;color:#FAFAF7;padding:8px 14px;border-radius:2px;font-size:.8125rem;opacity:0;transition:all .2s ease-out;z-index:60;pointer-events:none}
+#rd-toast.show{opacity:1;transform:translateX(-50%)}
+@media screen{body{padding-bottom:96px!important}}
+@media (max-width:640px){.rd-bar .rd-hint{display:none}}
+@media print{.rd-ui,.rd-tag,.rd-note{display:none!important}mark.rd-mark{background:transparent;color:inherit}}
