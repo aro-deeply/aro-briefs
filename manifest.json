@@ -1,0 +1,24 @@
+{
+ "name": "ARO Case Brief",
+ "short_name": "ARO Brief",
+ "start_url": "/aro-briefs/",
+ "scope": "/aro-briefs/",
+ "display": "standalone",
+ "background_color": "#FAFAF7",
+ "theme_color": "#FAFAF7",
+ "lang": "ko",
+ "icons": [
+  {
+   "src": "/aro-briefs/assets/icons/icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png",
+   "purpose": "any maskable"
+  },
+  {
+   "src": "/aro-briefs/assets/icons/icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any maskable"
+  }
+ ]
+}
