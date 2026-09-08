@@ -3,7 +3,9 @@
 ARO의 HR 스터디용 "Case Brief" 아카이브. GitHub Pages로 공개됨: https://aro-deeply.github.io/aro-briefs/
 
 ## 여기서 하는 일
-- 새 브리프 제작: `.claude/skills/aro-case-brief/SKILL.md`의 순서를 그대로 따른다. 입력물(초안 docx, 링크 메모)은 보통 `../inbox/`에 있다.
+- 새 브리프 제작: `.claude/skills/aro-case-brief/SKILL.md`의 순서를 그대로 따른다.
+- 기초자료 위치: 이 저장소 옆의 `../work/<브리프 폴더명>/` (git 밖, 공개되지 않음). 폴더명은 `briefs/` 아래 폴더명과 동일하게 맞춘다. 예: `briefs/2026-09-07-career-ladder/`의 초안·링크·검증 메모는 `../work/2026-09-07-career-ladder/`에 있다.
+- 새 브리프를 시작할 때 `../work/<새 폴더명>/`이 없으면 만들고, 초안·링크 메모를 거기 두게 한다. 검증 결과는 그 폴더에 `verify.md`로 남긴다(확인된 수치, 방향이 다른 수치, 확인 못 한 수치). 완성본만 저장소에 들어간다.
 - 산출물 배치: `briefs/YYYY-MM-DD-slug/index.html`(웹 판) + `brief.pdf`. 목록 `index.html`의 `<div id="list">` 맨 위에 카드 추가. 세부 규칙은 스킬의 `references/archive.md`.
 - 커밋 메시지: `brief: <slug>` / 도구 수정은 `reader: ...`, `site: ...`
 - 푸시 후 1~2분 뒤 공개 주소에서 새 페이지가 열리는지 확인하고 URL을 보고한다.
