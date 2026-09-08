@@ -21,3 +21,19 @@ mark.rd-mark.has-note{background:#EBD9A6}
 @media screen{body{padding-bottom:96px!important}}
 @media (max-width:640px){.rd-bar .rd-hint{display:none}}
 @media print{.rd-ui,.rd-tag,.rd-note{display:none!important}mark.rd-mark{background:transparent;color:inherit}}
+
+/* narrow screens: wide tables stack row by row */
+@media (max-width:640px){
+  table.rd-stack{display:block;border-top:1.5px solid #1C1917}
+  table.rd-stack thead{display:none}
+  table.rd-stack tbody{display:block}
+  table.rd-stack tr{display:block;padding:10px 0 6px;border-bottom:1px solid #E7E5E4}
+  table.rd-stack td{display:block;border:0;padding:2px 0 6px;white-space:normal!important}
+  table.rd-stack td:first-child{font-size:10.5pt;padding-bottom:6px}
+  table.rd-stack td:first-child .dt{margin-left:6px}
+  table.rd-stack td:first-child br{display:none}
+  table.rd-stack td:not(:first-child)::before{content:attr(data-label);display:block;font-size:.72rem;letter-spacing:.06em;color:#8B7355;font-weight:700;margin-bottom:1px}
+  table.rd-stack td.hl{background:transparent;padding-left:8px;border-left:2px solid #B48A5A}
+  table:not(.rd-stack){display:block;overflow-x:auto}
+  .flow .flow-lab{width:100%}
+}
