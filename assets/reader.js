@@ -142,5 +142,15 @@
     var m = e.target.closest('mark.rd-mark'); if (m && window.getSelection().isCollapsed) edit(m.dataset.id);
   });
 
+  /* mobile tables: label each cell with its column header so rows can stack */
+  document.querySelectorAll('table').forEach(function (t) {
+    var ths = [].map.call(t.querySelectorAll('thead th'), function (th) { return th.textContent.trim(); });
+    t.querySelectorAll('tbody tr, tr').forEach(function (tr) {
+      if (tr.querySelector('th')) return;
+      [].forEach.call(tr.children, function (td, i) { if (ths[i]) td.setAttribute('data-label', ths[i]); });
+    });
+    if (ths.length >= 4) t.classList.add('rd-stack');
+  });
+
   render();
 })();
