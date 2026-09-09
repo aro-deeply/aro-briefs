@@ -65,6 +65,7 @@ FINAL INSIGHT
 - 제목과 첫 블록은 `<div class="avoid">`로 묶어 고아 제목 방지
 - 표는 `thead`/`tbody` 구조 유지 (페이지 넘김 시 헤더 반복)
 - 강조 열은 `hl`, 콜아웃은 `hp`(초록)와 `box`/`flowbox`(베이지) 두 종류만
+- 줄바꿈은 `word-break: keep-all` + `overflow-wrap: anywhere`(템플릿에 있음). 단어 중간에서 끊지 않는다. 오른쪽 끝이 들쭉날쭉한 것은 정상이며 `normal`로 바꾸거나 `text-align: justify`를 넣지 않는다. check_brief.py가 이를 점검한다.
 
 ### 5. 렌더와 점검
 

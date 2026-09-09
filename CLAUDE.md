@@ -12,7 +12,8 @@ ARO의 HR 스터디용 "Case Brief" 아카이브. GitHub Pages로 공개됨: htt
 
 ## 하지 말 것
 - 디자인(색, 폰트, 크기) 변경. 템플릿 CSS는 손대지 않는다.
-- em dash(—), 이모지, 세리프 폰트. 한국어 본문은 `word-break: normal`(줄 끝까지 채움).
+- em dash(—), 이모지, 세리프 폰트.
+- 단어 중간에서 줄을 끊는 것. 본문은 `word-break: keep-all` + `overflow-wrap: anywhere`로 고정한다(어절 단위로만 줄바꿈, 오른쪽 끝이 들쭉날쭉한 것은 정상). 좁은 칸이 어색해 보여도 `normal`로 되돌리지 않는다.
 - 검증 안 된 수치 수록. 확인 못 한 수치는 빼고 출처 섹션에 명시.
 - `assets/reader.js`, `assets/reader.css`는 모든 브리프에 공통이므로 특정 편 때문에 고치지 않는다.
 

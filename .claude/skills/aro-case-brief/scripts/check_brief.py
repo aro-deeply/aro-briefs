@@ -9,6 +9,9 @@ issues = []
 if '—' in text: issues.append('em dash(—) 사용 %d회' % text.count('—'))
 if re.search(r'[\U0001F300-\U0001FAFF\u2600-\u27BF]', text): issues.append('이모지 포함')
 if re.search(r'serif|Noto Serif|명조', s, re.I) and 'sans-serif' not in s: issues.append('세리프 폰트 의심')
+if 'word-break:keep-all' not in s: issues.append('줄바꿈 규칙 위반: word-break:keep-all 이 없음 (단어 중간에서 끊김)')
+if re.search(r'word-break\s*:\s*normal', s): issues.append('줄바꿈 규칙 위반: word-break:normal 사용')
+if re.search(r'text-align\s*:\s*justify', s): issues.append('줄바꿈 규칙 위반: text-align:justify 사용')
 left = re.findall(r'\{\{[^}]*\}\}', body)
 if left: issues.append('미치환 플레이스홀더 %d개: %s' % (len(left), ', '.join(left[:5])))
 for key in ['한 줄 결론', 'HR POINT', '읽는 법', 'FINAL INSIGHT', '자료 출처 및 해석 유의사항']:
