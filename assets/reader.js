@@ -149,7 +149,7 @@
       if (tr.querySelector('th')) return;
       [].forEach.call(tr.children, function (td, i) { if (ths[i]) td.setAttribute('data-label', ths[i]); });
     });
-    if (ths.length >= 4) t.classList.add('rd-stack');
+    if (ths.length >= 3) t.classList.add('rd-stack');
   });
 
   render();
