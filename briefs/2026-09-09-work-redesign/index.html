@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<title>AI 도입 뒤의 문제는 더 잘 쓰는 법이 아니라 일을 그대로 둔 채 AI만 얹었다는 데 있을 수 있다 · ARO Case Brief</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="manifest" href="/aro-briefs/manifest.json">
+<meta name="theme-color" content="#FAFAF7">
+<link rel="apple-touch-icon" href="/aro-briefs/assets/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/aro-briefs/assets/icons/icon-192.png">
+
+<style>
+
+:root{--bg:#FAFAF7;--bg-soft:#F2EFE9;--surface:#FFFFFF;--surface-warm:#F7F1E8;--ink:#1C1917;--ink-80:#57534E;--muted:#6B625C;--muted-soft:#9A938D;--accent:#8B7355;--accent-dark:#5E4A36;--accent-warm:#B48A5A;--accent-soft:#F2EAE0;--callout:#EFE7DC;--callout-green:#E9EFE6;--line:#E7E5E4;}
+@page{size:A4;margin:18mm 17mm 18mm 17mm;}
+*{box-sizing:border-box;margin:0;padding:0}
+@media screen{body{max-width:860px;margin:0 auto;padding:40px 24px 80px;background:#FAFAF7}.pb{break-before:auto}.nav{display:flex;justify-content:space-between;font-size:9pt;color:var(--muted);margin-bottom:18px}.nav a{color:var(--accent-dark);text-decoration:none;border-bottom:1px solid var(--line)}}
+@media print{.nav{display:none}}
+@media (max-width:640px){.cards,.nums,.steps,.crit{flex-direction:column}h1 br{display:none}h1{font-size:17pt}body{padding:24px 16px 60px!important}}
+@media print{h1 br{display:inline}}
+html,body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;color:var(--ink);font-size:10pt;line-height:1.7;font-weight:400;background:#fff;word-break:normal;overflow-wrap:break-word;}
+.kicker{display:flex;justify-content:space-between;align-items:flex-end;padding-bottom:6px;border-bottom:1.5px solid var(--ink);font-size:8.5pt;letter-spacing:.14em;color:var(--muted);font-weight:700}
+.kicker span:last-child{font-weight:400;letter-spacing:.02em;color:var(--muted-soft)}
+h1{font-size:21pt;line-height:1.3;letter-spacing:-.02em;font-weight:700;margin:22px 0 10px}
+.sub{font-size:11.5pt;color:var(--ink-80);margin-bottom:22px}
+.lab{font-size:8.5pt;letter-spacing:.1em;color:var(--accent);font-weight:700;margin-bottom:6px}
+.box{background:var(--callout);border-radius:4px;padding:16px 20px;margin:0 0 20px}
+.box p{font-size:11.5pt;line-height:1.65;font-weight:500}
+.cards{display:flex;gap:12px;margin-bottom:26px}
+.card{flex:1;border:1px solid var(--line);border-radius:4px;padding:14px 16px;background:var(--surface)}
+.card .n{font-size:8.5pt;color:var(--accent);font-weight:700;margin-bottom:6px}
+.card b{display:block;font-size:10pt;margin-bottom:5px}
+.card span{font-size:8.5pt;color:var(--muted);line-height:1.55;display:block}
+h2{font-size:14pt;font-weight:700;letter-spacing:-.01em;margin:26px 0 8px}
+h2.num{padding-bottom:8px;border:0;border-bottom:1px solid var(--ink);margin-bottom:6px;break-after:avoid}
+h2.num.first{break-before:auto;page-break-before:auto}
+h2.num em{font-style:normal;color:var(--accent);margin-right:10px}
+.secsub{font-size:8.5pt;color:var(--muted-soft);margin-bottom:14px}
+h3{font-size:11pt;font-weight:700;margin:16px 0 8px}
+h3 .tag{display:inline-block;font-size:8pt;font-weight:500;color:var(--accent-dark);background:var(--accent-soft);border-radius:999px;padding:1px 10px;margin-left:8px;vertical-align:middle;letter-spacing:0}
+p{margin-bottom:10px}
+.q{border-left:2px solid var(--accent);padding:6px 16px;margin:12px 0 18px}
+.q .lab{margin-bottom:4px}
+.q p{margin:0;line-height:1.75}
+table{width:100%;border-collapse:collapse;font-size:9pt;margin:8px 0 12px}
+thead{display:table-header-group}
+tr{break-inside:avoid;page-break-inside:avoid}
+th{text-align:left;font-weight:700;padding:8px 8px;border-bottom:1.5px solid var(--ink);vertical-align:bottom;font-size:8.5pt}
+td{padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.55}
+td:first-child{font-weight:700;white-space:nowrap}
+.hl{background:var(--surface-warm)}
+.read{font-size:9pt;color:var(--ink-80);margin:4px 0 16px}
+.read b{color:var(--ink)}
+.hp{background:var(--callout-green);border:1px solid #DCE4D8;border-radius:4px;padding:11px 16px;margin:12px 0 16px;font-size:9.5pt;line-height:1.65}
+.hp b{color:var(--accent-dark);margin-right:6px}
+.flowbox{background:var(--callout);border-radius:4px;padding:16px 20px;margin:14px 0 20px}
+.flowbox .lab{margin-bottom:10px}
+.flow{display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+.chip{background:#fff;border:1px solid var(--line);border-radius:999px;padding:3px 12px;font-size:8.5pt;font-weight:700;white-space:nowrap}
+.chip.dim{color:var(--muted-soft);background:transparent;border-style:dashed;font-weight:500}
+.arr{color:var(--accent);font-size:9pt}
+.flow-lab{font-size:8pt;color:var(--muted);width:78px;flex-shrink:0;font-weight:700}
+.flowbox p{font-size:9pt;color:var(--ink-80);margin:6px 0 0}
+.nums{display:flex;gap:12px;margin:14px 0 20px}
+.num{flex:1;border:1px solid var(--line);border-radius:4px;padding:14px 14px 12px;background:var(--surface)}
+.num b{display:block;font-size:19pt;letter-spacing:-.02em;color:var(--accent-dark);font-weight:700;line-height:1.1;margin-bottom:5px;font-variant-numeric:tabular-nums}
+.num span{font-size:8.5pt;color:var(--muted);line-height:1.5;display:block}
+.qs{margin:6px 0 20px}
+.qs .it{margin-bottom:9px}
+.qs .it b{display:block;font-size:10.5pt}
+.qs .it b em{font-style:normal;color:var(--accent);margin-right:8px;font-size:9pt}
+.qs .it span{display:block;font-size:9pt;color:var(--ink-80);padding-left:26px;line-height:1.6}
+.steps{display:flex;gap:8px}
+.step{flex:1;background:#fff;border:1px solid var(--line);border-radius:4px;padding:9px 10px;font-size:8.5pt;line-height:1.5}
+.step em{font-style:normal;color:var(--accent);font-weight:700;margin-right:4px}
+.final{background:var(--callout);border-radius:4px;padding:14px 20px;margin:16px 0 18px}
+.final p{font-size:10.5pt;font-weight:500;line-height:1.7;margin:0}
+.src{border-top:1px solid var(--line);padding-top:14px;margin-top:10px}
+.src h4{font-size:9.5pt;font-weight:700;margin-bottom:8px;letter-spacing:.02em}
+.src p{font-size:8.5pt;color:var(--ink-80);line-height:1.6;margin-bottom:8px}
+.src ul{list-style:none;font-size:8.5pt;color:var(--muted);line-height:1.75}
+.src ul li span{color:var(--muted-soft)}
+.avoid{break-inside:avoid;page-break-inside:avoid}
+.pb{break-before:page;page-break-before:always}
+.mini{font-size:8.5pt;color:var(--muted-soft);margin-top:-6px;margin-bottom:10px}
+.dt{font-weight:400;color:var(--muted-soft)}
+</style>
+<link rel="stylesheet" href="../../assets/reader.css">
+</head><body>
+<div class="nav"><a href="../../">← ARO Case Brief 아카이브</a><a href="brief.pdf">PDF 내려받기</a></div>
+
+<div class="kicker"><span>CASE BRIEF</span><span>ARO · 2026.09</span></div>
+
+<h1>AI 도입 뒤의 문제는 ‘더 잘 쓰는 법’이 아니라 <br>일을 그대로 둔 채 AI만 얹었다는 데 있을 수 있다</h1>
+<p class="sub">개인 생산성이 조직 성과로 이어지지 않는 이유와 HR이 Agent보다 먼저 설계해야 할 Work Redesign</p>
+
+<div class="box avoid"><div class="lab">한 줄 결론</div>
+<p>국내 근로자의 절반 이상이 이미 업무에 생성형 AI를 쓰지만, 조직 단위로 일을 다시 설계한 곳은 소수다. 국내외 자료는 AI 성과의 차이가 도구가 아니라 과업·판단·책임을 다시 나눴는지에서 갈린다고 말한다. HR의 진짜 질문은 “직원이 AI를 얼마나 쓰는가”가 아니라, 이 성과를 만들기 위해 사람과 AI가 수행하는 일을 어떻게 나누고 누가 판단·책임지게 할 것인가다.</p></div>
+
+<div class="cards avoid">
+<div class="card"><div class="n">01</div><b>도구 도입보다 일의 재설계에서 먼저 갈린다</b><span>Tool Adoption보다 Work Redesign</span></div>
+<div class="card"><div class="n">02</div><b>직무보다 과업과 판단 단위가 먼저 변한다</b><span>Job보다 Task · Decision</span></div>
+<div class="card"><div class="n">03</div><b>AI 역량보다 데이터·권한·책임에서 먼저 막힌다</b><span>AI Literacy보다 Data · Decision Rights</span></div>
+</div>
+
+<h2>왜 지금 이 문제를 봐야 하나</h2>
+<p>한국은행 조사에서 국내 근로자의 63.5%가 생성형 AI를 활용하고 51.8%는 업무에 쓴다. 업무시간은 평균 3.8% 줄었다. 그런데 사업체 단위 AI 도입률은 조사에 따라 5.0%(노동연구원, 2023년 말)에서 28.6%(고용정보원, 2026)에 그친다. 개인은 이미 쓰고 있는데 조직은 아직 도입하지 않은 상태, 즉 활용의 대부분이 개인의 비공식 사용이라는 뜻이다. 한국직업능력연구원은 근로자 1,090명 설문과 기업 심층 인터뷰를 바탕으로 이를 “개별 효율성 증대가 조직 전체 생산성 향상으로 이어지지 못하는” 부분 최적화의 함정이라고 이름 붙였다.</p>
+<p>다만 “AI는 조직 성과를 못 낸다”로 읽으면 틀린다. 한국은행은 같은 조사에서 생산성 향상 효과를 약 1.0%로 추정했고, 국제결제은행(BIS)은 유럽·미국 1만 2천여 개 기업 자료에서 AI 도입이 노동생산성을 4% 높였다고 분석했다. 단, 그 효과는 소프트웨어·데이터·교육에 보완투자를 한 중대형 기업에 집중됐다. 문제는 AI의 효과 유무가 아니라, 개인 수준의 효과가 어떤 조건에서 조직 수준으로 옮겨가는가다.</p>
+
+<div class="q avoid"><div class="lab">이 자료의 질문</div>
+<p>“직원들이 AI를 얼마나 잘 쓰는가?”보다 더 중요한 질문은 이것이다.</p>
+<p>“이 성과를 만들기 위해 사람과 AI를 어떻게 구성하고, 어디서 사람이 판단하고 누가 책임지는가?”</p>
+<p>그 답은 모델 성능이 아니라 개별 기업의 직무설계·결정권·데이터 정비 결정에서 먼저 갈린다.</p></div>
+
+<h2 class="num pb"><em>01</em>국내 데이터를 겹치면 ‘개인과 조직의 간극’이 보인다</h2>
+<p class="secsub">도입률 수치 하나로는 결론이 안 난다. 조직 도입 → 개인 활용 → 조직 성과 전환을 연결해야 HR이 볼 패턴이 드러난다</p>
+
+<table><thead><tr><th style="width:15%">신호</th><th style="width:47%">확인된 변화</th><th>HR이 읽어야 할 것</th></tr></thead><tbody>
+<tr><td>한국노동연구원<br><span class="dt">2026.06</span></td><td>사업체패널 기준 AI 도입률 2023년 말 5.0%. 500인 이상 16.9%, 30~99인 3.5%, 중소기업 2.4%. 도입 이유 1위 생산성 향상 65.3%, 장애요인은 기술 부족 49.8%, 비용 48.7%, 효과 의구심 28.8%</td><td>조직 단위 도입은 초기이며 대기업 집중. 별도 연구에서 도입 분야는 생산공정보다 행정·인사 등 범용업무가 많았다</td></tr>
+<tr><td>한국은행<br><span class="dt">2025.08</span></td><td>근로자 63.5%가 생성형 AI 활용, 51.8%는 업무에 사용(미국의 약 2배). 업무시간 평균 3.8% 단축, 생산성 향상 약 1.0% 추정</td><td>개인 활용은 이미 넓다. 조직 도입률과의 차이만큼이 프로세스 밖에서 일어나는 비공식 사용이다</td></tr>
+<tr><td>고용노동부<br><span class="dt">2025.11</span></td><td>매출 상위 500대 기업 인사담당자 조사. 인사 업무에 AI 도구 사용(공식·비공식 포함) 86.7%, 공식 채용절차에 AI 도입 21.7%, 도입·확대 계획 74.5%</td><td>HR 부서 자체가 이 간극의 전형이다. 담당자는 쓰지만 프로세스와 결정권은 그대로다</td></tr>
+<tr><td>한국직업능력연구원<br><span class="dt">2025.12</span></td><td>근로자 1,090명 설문 + 기업 심층 인터뷰. 직원은 AI를 ‘능력 확장 도구’로 보고 스스로 직무를 재구성(Job Crafting)하지만, 기업은 전략 없이 도입해 ‘부분 최적화의 함정’에 빠짐. 개인·프로세스·조직 3수준 직무재설계와 HR 시스템 혁신 제안</td><td>개인 수준의 재설계는 자발적으로 일어난다. 비어 있는 것은 프로세스·조직 수준의 설계다</td></tr>
+<tr><td>한국고용정보원<br><span class="dt">2026.08</span></td><td>21개 산업 2,297개 사업체 중 656곳(28.6%) 도입, 그중 75.6%가 생성형 AI. 목적은 인원 감축보다 반복업무 경감. 보도 기준으로 신규채용보다 인력 재배치를 우선하고, 인사평가의 AI 역량 반영은 3년 뒤 2.09→2.96(5점)으로 전망</td><td>여력을 재배치하고 평가에 반영하겠다는 방향은 있는데, 무엇을 어떻게 재배치·평가할지의 설계는 아직 없다</td></tr>
+<tr><td>Deloitte<br><span class="dt">2026.03</span></td><td>2026 Global Human Capital Trends. 조직의 59%가 기존 프로세스 위에 AI를 얹는 기술 중심 접근. Human-AI 상호작용 설계가 중요하다 66%, 선도한다 6%. 일의 설계를 우선한 조직은 AI ROI 기대치 초과 가능성 2배</td><td>글로벌 리더도 같은 지점에서 막혀 있다. 한국 특수 현상이 아니라 도입 방식의 문제다</td></tr>
+<tr><td>BIS · 한국은행<br><span class="dt">2026.01 · 2025.08</span></td><td>BIS: 유럽·미국 1만 2천여 개 기업에서 AI 도입 시 노동생산성 4% 상승, 고용 부정효과 없음. 효과는 소프트웨어·데이터·교육에 보완투자한 중대형 기업에 집중</td><td>반대 증거. AI 효과는 실재한다. 다만 보완투자를 한 기업에 몰리므로 “도구만 주면 된다”와 “효과가 없다” 둘 다 틀린다</td></tr>
+</tbody></table>
+<p class="read"><b>읽는 법</b> 도입률이 5.0%, 9.2%, 28.6%, 48%로 제각각인 것은 조사 정의가 다르기 때문이다(30인 이상 사업체패널, 기업활동조사, 21개 산업 표본, 대기업). 어느 수치를 써도 개인 활용률(51.8~63.5%)과의 간극은 유지된다. 따라서 정확한 해석은 “한국 기업이 AI를 안 쓴다”가 아니라 “활용은 개인 수준에 갇혀 있고, 그것을 조직 성과로 옮기는 프로세스·결정권·데이터 설계를 한 기업이 소수”에 가깝다.</p>
+
+<div class="hp avoid"><b>HR POINT ①</b>HR 부서가 이 문제의 첫 번째 사례다. 500대 기업 인사담당자의 86.7%가 AI 도구를 쓰지만 공식 채용절차에 넣은 곳은 21.7%다. 비공식 개인 활용은 담당자의 시간은 줄이지만 검토 단계, 결정권, 책임은 하나도 바꾸지 않는다. HR이 자기 업무에서 이 간극을 먼저 닫지 못하면 다른 부서에 Work Redesign을 요구할 근거가 없다.</div>
+
+<div class="avoid"><h3>해외 대조: 세 개의 다른 조사가 같은 순서를 보여준다 <span class="tag">McKinsey · BCG</span></h3>
+<p>McKinsey는 2025년 3월 조사(1,491명, 101개국)에서 25개 요인 중 워크플로우 재설계가 AI의 EBIT 효과를 가장 크게 좌우한다고 봤는데, 실제로 재설계한 조직은 21%였다. 2026년 8월 조사(1,719명, 97개국)에서는 80%가 개인 생산성이 올랐다고 답했지만 전사 EBIT 영향은 37%에 그쳤다. 고성과 조직(약 6%)의 4분의 3이 워크플로우를 근본적으로 재설계한 반면 나머지는 4분의 1이었다. BCG 2026년 6월 조사(11,749명, 14개 시장)에서는 일선 직원의 74%가 AI를 정기적으로 쓰고 42%가 주 8시간을 절약하지만, 66%는 절약한 시간을 무엇에 쓸지 지침이 없었다.</p>
+<p class="mini">개인 사용률 상승 → 조직 성과 미전환 → 재설계 여부가 차이를 만든다는 같은 순서가 서로 다른 표본에서 반복된다. 이것이 국내 간극을 ‘도입 초기의 일시적 현상’으로만 보기 어려운 이유다.</p></div>
+
+<div class="avoid"><h2 class="num"><em>02</em>AI는 직무가 아니라 ‘직무 안의 과업과 판단’ 단위로 들어온다</h2>
+<p class="secsub">그래서 HR의 관리 단위가 사람·직무에서 사람과 AI가 함께 수행하는 일의 체계로 내려가야 한다</p>
+<p>AI 사용 데이터는 직업이 아니라 과업 단위로 집계된다. Anthropic은 미국 직업정보망 O*NET의 과업 분류로 사용을 추적하는데, 2026년 1월 기준 일반 사용자는 증강 52%, 자동화 45%, 기업용 API는 약 75%가 자동화 패턴이었다. 채용담당자라는 직무가 사라지는 것이 아니라 ‘지원서 요약’은 AI가, ‘핵심 경력 대조’는 AI와 사람이, ‘채용 여부 판단’은 사람이 하는 식으로 직무 안의 과업이 갈라진다. 그 순간 누가 어떤 과업을 하고, 누가 판단하고, 어디서 사람이 검증하고, 남은 사람에게 어떤 역량이 필요한지가 정해져야 한다. 이것은 IT의 질문이 아니라 직무설계·역량·평가의 질문이다.</p></div>
+
+<div class="flowbox avoid"><div class="lab">HR의 관리 단위: 기존 vs Work Redesign 이후</div>
+<div class="flow"><span class="flow-lab">기존</span><span class="chip">직무 정의</span><span class="arr">→</span><span class="chip">사람 채용</span><span class="arr">→</span><span class="chip">역량 개발</span><span class="arr">→</span><span class="chip">성과 평가</span></div>
+<div class="flow"><span class="flow-lab">이후</span><span class="chip">성과 정의</span><span class="arr">→</span><span class="chip dim">과업·판단 분해</span><span class="arr">→</span><span class="chip">사람 / AI 배분</span><span class="arr">→</span><span class="chip dim">검토·에스컬레이션 설계</span><span class="arr">→</span><span class="chip">남는 사람의 역량 재정의</span><span class="arr">→</span><span class="chip">성과·책임 관리</span></div>
+<p>점선 칩은 대부분의 조직에서 비어 있는 구간이다. 도구를 주고 교육을 하면 ‘사람 / AI 배분’은 개인이 알아서 한다. 그러나 무엇을 얼마나 잘게 나눌지, 어디서 사람이 검토하고 언제 넘길지는 개인이 정할 수 없다. Deloitte는 RACI 같은 정적 결정권 모델이 AI 환경에 맞지 않으며, 되돌리는 권한(override), 넘기는 경로(escalation), 합의 규칙을 시스템 안에 설계해야 한다고 본다.</p></div>
+
+<div class="hp avoid"><b>HR POINT ②</b>업무분해의 목적은 자동화 목록이 아니라 ‘판단 지점’을 드러내는 것이다. ‘지원서 검토’를 통째로 두면 AI 적용 여부를 판단할 수 없고, ‘PDF 열기, 이름 읽기’까지 쪼개면 의미가 없다. 계층적 과업분석(HTA)의 중단 규칙은 실패 확률과 실패 비용의 곱이 충분히 낮으면 더 쪼개지 않는 것이다. AI 배분용으로 옮기면 입력과 출력을 정의할 수 있고, 수행 주체를 정할 수 있으며, 틀렸을 때의 비용을 말할 수 있는 단위에서 멈춘다. HTA는 여러 방법 중 하나이며 인지과업분석(ACTA), 결정적 사건 인터뷰(CDM)처럼 판단 지점을 캐는 방법도 있다.</div>
+
+<div><h3 style="break-after:avoid">현실이 어려워지는 다섯 지점</h3>
+<table><thead><tr><th style="width:17%">막히는 지점</th><th style="width:45%">근거</th><th>HR이 할 일</th></tr></thead><tbody>
+<tr><td>공식 절차 ≠ 실제 일</td><td>Hollnagel의 Work-as-Imagined와 Work-as-Done 구분(EUROCONTROL, 2013). 문서화된 절차는 명목 조건의 일이고, 실제 일은 “이 포지션은 본부장이 먼저 본다”, “이 직군은 연봉테이블이 다르다” 같은 예외와 비공식 승인으로 굴러간다</td><td>SOP가 아니라 실제 사례를 놓고 인터뷰한다. 예외·비공식 확인이 어디서 일어나는지가 분해의 핵심 산출물이다</td></tr>
+<tr><td>할 수 있다 ≠ 맡겨야 한다</td><td>Stanford 연구(근로자 1,500명·104개 직업·844개 과업, AI 전문가 52명). 근로자가 자동화를 원하는 과업 46.1%, 근로자와 전문가의 판단이 일치한 과업 26.9%. 47.5%의 과업에서 근로자는 전문가가 필요하다고 본 것보다 높은 사람 관여를 원했고, 45.2%의 직업에서 ‘동등한 파트너십’을 선호</td><td>AI 가능성 하나로 배분하지 않는다. 가치·빈도·위험·검증비용·개인정보·설명가능성·책임소재를 함께 놓는다. 가능하지만 원치 않는 과업(Red Light Zone)이 HR에 많다</td></tr>
+<tr><td>남는 일이 더 어려워진다</td><td>Bainbridge의 ‘자동화의 아이러니’(1983): 남는 일은 자동화하지 못한 어려운 일이고, 감시는 지치는 일이며, 쓰지 않는 기술은 퇴화한다. METR 무작위 실험(2025.07)에서 숙련 개발자 16명은 AI를 쓸 때 19% 느려졌지만 본인은 20% 빨라졌다고 믿었다. Upwork 조사(2024, 2,500명)에서 77%가 AI 도구가 업무량을 늘렸고 39%는 AI 산출물 검토에 시간을 더 쓴다고 답했다</td><td>업무량이 30% 줄어도 사람이 30% 편해지지 않는다. 남는 70%의 난이도와 검증 부하를 따로 본다. ‘시간 절감’이 성과지표가 될 수 없는 이유다</td></tr>
+<tr><td>판단의 책임</td><td>개인정보보호법 제37조의2(2024.03.15 시행): 완전히 자동화된 결정이 권리·의무에 중대한 영향을 미치면 정보주체는 거부·설명요구를 할 수 있고, 처리자는 기준과 절차를 공개해야 한다. 개인정보위 안내서(2024.09)는 자동화 점수만 형식적으로 확인해 불합격시킨 채용을 해당 사례로 든다. 미국 Mobley v. Workday(2024.07)에서 법원은 채용 AI 공급자가 고용주의 ‘대리인’으로 책임질 수 있다고 봤고, EU AI Act는 채용·평가·승진 AI를 고위험으로 분류한다(의무 적용 2027.12.02)</td><td>채용·평가·보상·승진에서 사람의 검토는 형식이 아니라 실질이어야 한다. IBM은 AI가 급여 인상을 추천하되 얼마를 줄지는 항상 관리자가 정하게 둔다</td></tr>
+<tr><td>암묵지</td><td>“경력은 좋아 보이지만 우리가 원하는 경험은 아니다”라는 판단에는 정보 외에 경험·패턴·맥락·조직문화·가치판단이 섞여 있고, 물으면 “경험상”이라는 답이 돌아온다. Nonaka의 SECI(1995), Klein의 CDM(1989) 같은 추출 방법은 있으나 시간과 전문성이 든다. LLM으로 전문가 암묵지를 외재화하는 연구(arXiv, 2026)가 있으나 초록 기준이며 검증 중이다</td><td>고성과자의 판단 기준을 캐는 인터뷰·사례분석이 HR·조직개발의 새 과업이 될 수 있다. 아직 표준 방법론이 확립된 영역은 아니다</td></tr>
+</tbody></table></div>
+
+<div class="hp avoid"><b>HR POINT ③</b>“판단이 필요한 건 사람이 하면 된다”는 답은 간단하지 않다. 사람에게 남는 것은 예외, 갈등, 고난도 판단, 관계관리처럼 인지부하가 높은 일이고, 그 판단을 하려면 과거에 앞 단계를 직접 수행하며 쌓은 경험이 필요하다. 이 두 가지가 Work Redesign 이후 역량 정의와 보상 설계가 따라와야 하는 이유다. 자동화 비율과 사람의 부담이 반비례한다는 가정은 입증된 사실이 아니라 검토해야 할 시나리오다.</div>
+
+<div class="avoid"><h3>국내 현장 사례: 컨설팅은 이를 어떻게 방법론화하는가 <span class="tag">더와이랩 · 머니투데이 2026.09</span></h3>
+<p>HRD 기업 더와이랩(2016년 설립)의 김홍태 대표는 “어떤 업무를 누가 왜 하고 있는지 분해하지 못하면 아무리 좋은 모델을 붙여도 성과가 나오지 않는다”고 말한다. 워크북 ‘AX DISCOVERY’는 계층적 과업분석(HTA), 강도·빈도·중요도 매트릭스(IFV), Human-in-the-Loop 원칙으로 병목을 찾고 사람과 AI의 역할을 나눈 뒤, 목표 정렬 → 리스크·페인포인트 → 데이터 준비도 진단 → 우선순위 → 협업 워크플로우 → ROI 정량화 순서로 간다. 기업이 막히는 지점으로는 리더십 부재와 내부 저항을, 향후 컨설턴트의 역할로는 우수 인재의 판단 기준을 추출해 에이전트에 학습시키는 ‘지능 엔지니어’를 든다.</p>
+<p class="mini">이 사례는 트렌드의 근거가 아니라 국내 컨설팅 현장이 Work Redesign을 어떤 순서로 방법론화하는지 보여주는 한 예다. 누적 프로젝트 수와 효과는 회사 측 주장이며, 이 순서가 실제 고객사에서 어디까지 작동했는지는 공개자료로 확인되지 않았다. 스터디에서 검토할 질문은 “HTA가 맞는가”가 아니라 “데이터 준비도 진단이 우선순위보다 앞에 오는 이 순서가 우리 조직에서도 필요한가”다.</p></div>
+
+<div class="avoid"><h2 class="num"><em>03</em>Agent를 만들기 전에 HR이 먼저 준비할 것</h2>
+<p class="secsub">AX 준비도를 AI Literacy 하나로 보면 실제로 막히는 지점을 놓친다</p>
+<div class="nums avoid">
+<div class="num"><b>51.8%</b><span>국내 근로자 중 업무에 생성형 AI를 쓰는 비율. 업무시간은 평균 3.8% 단축 (한국은행, 2025.08)</span></div>
+<div class="num"><b>21.7%</b><span>500대 기업 중 공식 채용절차에 AI를 도입한 비율. 인사 업무에서의 AI 도구 사용은 86.7% (고용노동부, 2025.11)</span></div>
+<div class="num"><b>6%</b><span>Human-AI 상호작용 설계를 선도한다고 답한 리더. 중요하다는 66%, 기술 중심 도입은 59% (Deloitte, 2026.03)</span></div>
+<div class="num"><b>26.9%</b><span>844개 과업 중 근로자와 AI 전문가가 적정 자동화 수준에 합의한 비율 (Stanford, 2025)</span></div>
+</div></div>
+
+<p>국내 기업의 현재 위치를 정리하면 이렇다. 개인 활용은 넓고, 조직 도입은 초기이며, HR 부서조차 비공식 활용과 공식 프로세스의 간극이 크다. 확보된 여력을 재배치하고 평가에 AI 역량을 반영하겠다는 방향은 잡혔지만, 무엇을 나누고 누가 판단하며 어떤 데이터로 움직일지의 설계는 대부분 비어 있다. 그래서 Agent 제작은 순서상 후반부이고, 그 앞에 네 가지 준비도가 온다.</p>
+
+<div><h3 style="break-after:avoid">AX 준비도 4축: AI Literacy만으로는 부족하다</h3>
+<table><thead><tr><th style="width:16%">준비도</th><th style="width:36%">없으면 생기는 일</th><th class="hl">HR이 먼저 확인할 것</th></tr></thead><tbody>
+<tr><td>Process</td><td>SOP 기준으로 분해해 예외·비공식 승인이 빠진 목록으로 Agent를 설계한다. 실제 업무에서 바로 막힌다</td><td class="hl">실제 사례 5건을 따라가며 판단·예외·에스컬레이션이 일어난 지점을 표시한 ‘실제 일의 지도’</td></tr>
+<tr><td>Data</td><td>HR Agent가 취업규칙을 답하려는데 최신본이 무엇인지, 개정 전 파일과 충돌하는지, 자회사·직급별로 다른지, 누가 최신성을 책임지는지 정해져 있지 않다</td><td class="hl">규정·제도 문서의 최신본 목록, 충돌 문서 정리, 접근권한 등급, 문서별 관리 책임자. AI 문제가 아니라 문서관리 문제다</td></tr>
+<tr><td>Governance</td><td>AI가 추천하고 사람이 형식적으로 확인하면 법적으로는 ‘자동화된 결정’이 된다. 오류 발생 시 책임소재가 비어 있다</td><td class="hl">채용·평가·보상·승진별로 AI의 역할(초안·추천·판단 보조), 사람의 실질 검토 내용, 되돌리기·넘기기 규칙, 기준 공개 방식</td></tr>
+<tr><td>Workforce</td><td>도구를 내려보내면 구성원은 일자리 위협으로 읽는다. 남는 일의 난이도와 검증 부하가 올라가는데 역량·보상은 그대로다</td><td class="hl">남는 과업에 필요한 역량 재정의, Human-Agent 협업 훈련(프롬프트 교육이 아니라 검토·판단 훈련), 재배치 원칙의 사전 공개</td></tr>
+</tbody></table></div>
+
+<div class="hp avoid"><b>HR POINT ④</b>국내에서 가장 먼저 막힐 곳은 모델이 아니라 Data Readiness일 가능성이 높다. SK텔레콤 사례에서 HR 담당자가 직접 만든 첫 에이전트가 ‘인사제도 문의 대응’이었던 것은 우연이 아니다. 규정 문의는 가장 쉬워 보이지만, 최신 규정이 무엇이고 누가 볼 수 있으며 조직마다 어떻게 다른지가 정리돼 있어야 답할 수 있다. 이 정리는 HR만 할 수 있고, HR이 오래 미뤄 온 일이기도 하다. 데이터 정비가 실제 병목이라는 것은 국내 통계로 입증된 사실이 아니라 현장 사례와 연구 결과를 연결한 시나리오다.</div>
+
+<div><h3 style="break-after:avoid">Work Redesign 이후 HR 제도가 받는 영향</h3>
+<table><thead><tr><th style="width:16%">영역</th><th style="width:36%">기존 관리</th><th class="hl">추가로 볼 것</th></tr></thead><tbody>
+<tr><td>Job Architecture</td><td>직무 단위 정의와 등급</td><td class="hl">AI가 가져간 과업과 사람에게 남은 판단의 목록. 직무명은 같아도 내용이 다른 직무</td></tr>
+<tr><td>Skill</td><td>직무별 요구역량, AI 도구 사용법 교육</td><td class="hl">AI 산출물 검증, 예외 판단, 넘길 시점을 아는 능력. 앞 단계를 직접 안 해본 사람이 이를 어디서 얻는가</td></tr>
+<tr><td>Performance</td><td>개인 산출물 기준 평가</td><td class="hl">사람과 AI가 함께 만든 결과의 평가 기준. 시간 절감이 아니라 절감된 시간이 어디로 갔는지</td></tr>
+<tr><td>Reward</td><td>직무·성과 기준 보상</td><td class="hl">AI로 생산성이 2배가 된 개인의 성과를 개인 몫으로 볼지 시스템 몫으로 볼지. 남는 고난도 업무의 인정</td></tr>
+<tr><td>Headcount</td><td>인원 계획, 결원 충원</td><td class="hl">여력을 감원으로 볼지 재배치로 볼지의 원칙과 사전 공개. 고용정보원 조사에서 기업은 재배치를 우선한다고 답했다</td></tr>
+<tr><td>Employee Relations</td><td>제도 변경 시 설명·협의</td><td class="hl">직무상실 불안과 저항. 재배치 원칙 없이 도구부터 주면 저항은 합리적 반응이다</td></tr>
+</tbody></table></div>
+
+<div class="avoid"><h2 class="num"><em>04</em>HR 리더가 지금 점검할 질문</h2>
+<p class="secsub">정답을 정하기보다 각 조직의 현재 수준과 다음 선택을 점검하기 위한 질문</p>
+<div class="qs">
+<div class="it"><b><em>01</em>우리 HR 부서에서 AI는 공식 프로세스 안에 있는가, 담당자의 개인 도구인가?</b><span>500대 기업 인사담당자의 86.7%가 쓰지만 공식 절차에 넣은 곳은 21.7%다. 이 간극이 우리 조직에도 있다면, 다른 부서에 재설계를 요구하기 전에 HR이 먼저 보여줄 사례가 여기 있다.</span></div></div></div>
+<div class="qs">
+<div class="it"><b><em>02</em>채용 한 건을 실제로 따라가면 공식 절차에 없는 판단과 승인이 몇 번 나오는가?</b><span>그 예외들이 Work-as-Done이다. Agent는 SOP가 아니라 이것을 따라야 하는데, 대부분의 조직은 이 목록을 가져본 적이 없다.</span></div>
+<div class="it"><b><em>03</em>AI가 할 수 있는 HR 과업 중, 우리가 맡기지 않기로 정한 과업의 목록이 있는가?</b><span>Stanford 조사에서 근로자와 전문가의 판단이 일치한 과업은 26.9%뿐이다. ‘가능하지만 맡기지 않는다’를 명시하지 않으면 그 결정은 벤더와 개인이 대신 내린다.</span></div>
+<div class="it"><b><em>04</em>AI가 추천한 채용·평가·보상 결정에서 사람의 검토는 실질인가 형식인가?</b><span>점수만 형식적으로 확인해 결정하면 법적으로 자동화된 결정이 된다. 오류가 났을 때 누가 책임지는지 지금 답할 수 있는가.</span></div>
+<div class="it"><b><em>05</em>HR Agent가 답해야 할 규정의 최신본과 관리 책임자를 지금 말할 수 있는가?</b><span>취업규칙, 인사제도, 근태규정의 최신본이 어디 있고 자회사·직급별로 어떻게 다른지 정리돼 있지 않으면 Agent는 틀린 답을 자신 있게 한다.</span></div>
+</div>
+
+<div class="flowbox avoid"><div class="lab">참고: 작은 진단을 한다면</div>
+<div class="steps">
+<div class="step"><em>1</em>HR 업무 하나(예: 서류 전형)를 골라 실제 사례 5건을 처음부터 끝까지 따라간다</div>
+<div class="step"><em>2</em>각 사례에서 판단·예외·비공식 확인이 일어난 지점을 표시하고 담당자에게 “왜 그렇게 했는지” 묻는다</div>
+<div class="step"><em>3</em>과업마다 AI 가능성이 아니라 가치·빈도·위험·검증비용·개인정보를 함께 놓고 ‘맡길 것 / 보조 / 사람’으로 나눈다</div>
+<div class="step"><em>4</em>사람이 남는 과업에서 검토의 실질 내용과 되돌리기·넘기기 규칙을 한 줄씩 적는다</div>
+<div class="step"><em>5</em>그 과업이 참조하는 규정·문서의 최신본과 관리 책임자를 목록으로 만든다. 이것이 Agent의 첫 요구사항이다</div>
+</div></div>
+
+<div class="final avoid"><div class="lab">FINAL INSIGHT</div>
+<p>AI 도입 뒤의 병목은 직원의 활용 능력이 아니다. 개인 활용↑ → 조직 도입·재설계 없음 → 프로세스·결정권·데이터 그대로 → 개인 시간 절감이 조직 성과로 전환되지 않는 구조가 국내외 자료에서 같은 순서로 반복된다. HR의 관리 단위는 사람과 직무에서 사람과 AI가 함께 수행하는 일의 체계로 넓어지고 있으며, HR의 질문은 “이 직무에 어떤 사람이 필요한가”에서 “이 성과를 위해 사람과 AI를 어떻게 구성하고 누가 판단·책임지는가”로 확장된다. 그 설계를 IT나 벤더에게 넘기지 않는 것이 HR의 다음 역할이다.</p></div>
+
+<div class="src">
+<h4>자료 출처 및 해석 유의사항</h4>
+<p>“개인 효율이 조직 성과로 이어지지 않는다”는 국내 실증(한국은행 생산성 1.0% 추정, KRIVET 인터뷰)과 해외 설문(McKinsey, BCG, Deloitte)의 방향이 일치하지만, 재설계와 성과의 인과는 설문 기반 상관이며 입증된 인과가 아니다. 사업체 AI 도입률은 조사 정의에 따라 5.0~48%로 다르므로 단일 수치로 인용하지 않았다. KRIVET 보고서의 설문 세부 수치(활용률, 조직 지원 비율 등)는 전문을 확인하지 못해 미수록했고, 정성 결론만 인용했다. Deloitte 2026 조사 표본은 보고서 본문(리더 3,000여 명·15개국 + 근로자·관리자·임원 6,000명)과 웹 페이지(9,000여 명·89개국) 표기가 다르다. 개인정보위 안내서의 채용 사례와 고용정보원의 재직자 305명 조사 수치는 기관 발표를 인용한 보도 기준이다. 더와이랩의 프로젝트 수와 효과는 회사 측 주장이다. OECD 「AI와 한국 노동시장」(2025.10)의 도입률 비교는 조사 정의 차이로 미수록했다.</p>
+<ul>
+<li>한국은행 BOK 이슈노트 2025-22, 「AI의 빠른 확산과 생산성 효과: 가계조사를 바탕으로」 <span>(2025.08.18)</span></li>
+<li>한국노동연구원 패널브리프 제36호, 김기민 「사업체의 AI 도입 현황 및 영향에 대한 탐색적 분석」 <span>(2026.06)</span></li>
+<li>한국노동연구원, 「AI 도입의 결정요인 및 성과 분석: 사업체패널조사 자료를 이용하여」 <span>(2025.12)</span></li>
+<li>고용노동부 보도자료, 「인공지능(AI) 활용한 채용도 똑똑하고 공정하게!」 2025년 기업 채용동향조사 <span>(2025.11.28)</span></li>
+<li>한국직업능력연구원 기본연구 2025-03, 나동만 외 「생성형 AI 시대의 직무재설계와 혁신 방안」 <span>(2025.12.31)</span></li>
+<li>한국고용정보원 「고용이슈」 2026년 여름호, 고용노동부 게시 「AI는 일자리 파괴자 아닌 직무 재구성의 파트너」 <span>(2026.08.31)</span></li>
+<li>개인정보보호법 제37조의2 (2024.03.15 시행), 개인정보보호위원회 「자동화된 결정에 대한 정보주체의 권리 안내서」 <span>(2024.09.26)</span></li>
+<li>머니투데이, 「더와이랩 “AX의 본질은 도구가 아닌 ‘일’의 재설계”」 <span>(2026.09.07)</span></li>
+<li>SK텔레콤 뉴스룸, 에이닷 비즈 그룹사 확대 <span>(2025.09.29)</span></li>
+<li>Deloitte 2026 Global Human Capital Trends, 「Getting human and machine relationships right」, 「AI and the future of human decision-making」 <span>(2026.03.04)</span></li>
+<li>McKinsey, 「The state of AI」 <span>(2025.03.12 · 2026.08.25)</span></li>
+<li>BCG, 「AI at Work: Why Strategy Matters More Than Tools」 <span>(2026.06.03)</span></li>
+<li>BIS Working Paper 1325, 「AI adoption, productivity and employment: evidence from European firms」 <span>(2026.01.23)</span></li>
+<li>Shao et al., 「Future of Work with AI Agents」 Stanford, arXiv 2506.06576 <span>(2025.06)</span></li>
+<li>Anthropic Economic Index, January 2026 Report <span>(2026.01.15)</span></li>
+<li>METR, 「Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity」 <span>(2025.07.10)</span></li>
+<li>Upwork Research Institute, 「From Burnout to Balance」 <span>(2024.07.23)</span></li>
+<li>Hollnagel et al., 「From Safety-I to Safety-II: A White Paper」 EUROCONTROL <span>(2013.09)</span></li>
+<li>Bainbridge, 「Ironies of Automation」 Automatica 19(6); Stanton, 「Hierarchical task analysis」 Applied Ergonomics 37(1) <span>(1983 · 2006)</span></li>
+<li>IBM, 「The CHRO’s Guide to AI in HR」 <span>(2025.10.02)</span></li>
+<li>Mobley v. Workday, N.D. Cal. 결정 <span>(2024.07.12)</span>; Regulation (EU) 2026/1744 (Digital Omnibus on AI) <span>(2026.07.27 발효)</span></li>
+</ul>
+<p style="margin-top:12px">함께 읽기: <a href="../2026-09-01-ai-agent-adoption/" style="color:var(--accent-dark)">AI 교육의 다음 단계는 “직원이 직접 업무를 바꾸는 것”인가</a> (2026.09). 현업이 직접 Agent를 만든 사례. 이 브리프는 그 앞에 와야 할 업무분해·결정권·데이터 정비를 다룬다. <a href="../2026-09-07-career-ladder/" style="color:var(--accent-dark)">AI가 먼저 없애는 것은 ‘사람’이 아니라 신입이 숙련자로 성장하던 과정일 수 있다</a> (2026.09). 사람에게 남는 판단 업무의 경험을 어디서 쌓는가라는 HR POINT ③의 질문과 이어진다.</p>
+</div>
+<script src="../../assets/reader.js"></script>
+</body></html>
