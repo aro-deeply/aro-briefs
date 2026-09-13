@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<title>AI로 일이 빨라졌다면, 목표도 높여야 할까? · ARO Case Brief</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="manifest" href="/aro-briefs/manifest.json">
+<meta name="theme-color" content="#FAFAF7">
+<link rel="apple-touch-icon" href="/aro-briefs/assets/icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/aro-briefs/assets/icons/icon-192.png">
+
+<style>
+/*FONTFACE*/
+:root{--bg:#FAFAF7;--bg-soft:#F2EFE9;--surface:#FFFFFF;--surface-warm:#F7F1E8;--ink:#1C1917;--ink-80:#57534E;--muted:#6B625C;--muted-soft:#9A938D;--accent:#8B7355;--accent-dark:#5E4A36;--accent-warm:#B48A5A;--accent-soft:#F2EAE0;--callout:#EFE7DC;--callout-green:#E9EFE6;--line:#E7E5E4;}
+@page{size:A4;margin:18mm 17mm 18mm 17mm;}
+*{box-sizing:border-box;margin:0;padding:0}
+@media (max-width:640px){.cards,.nums,.steps,.crit{flex-direction:column}h1 br{display:none}h1{font-size:17pt}body{padding:24px 16px 60px!important}}
+@media print{h1 br{display:inline}}
+@media screen{body{max-width:860px;margin:0 auto;padding:40px 24px 80px;background:#FAFAF7}.pb{break-before:auto}.nav{display:flex;justify-content:space-between;font-size:9pt;color:var(--muted);margin-bottom:18px}.nav a{color:var(--accent-dark);text-decoration:none;border-bottom:1px solid var(--line)}}@media print{.nav{display:none}}
+html,body{font-family:'Pretendard Variable',Pretendard,-apple-system,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;color:var(--ink);font-size:10pt;line-height:1.7;font-weight:400;background:#fff;word-break:keep-all;overflow-wrap:anywhere;}
+.kicker{display:flex;justify-content:space-between;align-items:flex-end;padding-bottom:6px;border-bottom:1.5px solid var(--ink);font-size:8.5pt;letter-spacing:.14em;color:var(--muted);font-weight:700}
+.kicker span:last-child{font-weight:400;letter-spacing:.02em;color:var(--muted-soft)}
+h1{font-size:21pt;line-height:1.3;letter-spacing:-.02em;font-weight:700;margin:22px 0 10px}
+.sub{font-size:11.5pt;color:var(--ink-80);margin-bottom:22px}
+.lab{font-size:8.5pt;letter-spacing:.1em;color:var(--accent);font-weight:700;margin-bottom:6px}
+.box{background:var(--callout);border-radius:4px;padding:16px 20px;margin:0 0 20px}
+.box p{font-size:11.5pt;line-height:1.65;font-weight:500}
+.cards{display:flex;gap:12px;margin-bottom:26px}
+.card{flex:1;border:1px solid var(--line);border-radius:4px;padding:14px 16px;background:var(--surface)}
+.card .n{font-size:8.5pt;color:var(--accent);font-weight:700;margin-bottom:6px}
+.card b{display:block;font-size:10pt;margin-bottom:5px}
+.card span{font-size:8.5pt;color:var(--muted);line-height:1.55;display:block}
+h2{font-size:14pt;font-weight:700;letter-spacing:-.01em;margin:26px 0 8px}
+h2.num{padding-bottom:8px;border:0;border-bottom:1px solid var(--ink);margin-bottom:6px;break-after:avoid}
+h2.num.first{break-before:auto;page-break-before:auto}
+h2.num em{font-style:normal;color:var(--accent);margin-right:10px}
+.secsub{font-size:8.5pt;color:var(--muted-soft);margin-bottom:14px}
+h3{font-size:11pt;font-weight:700;margin:16px 0 8px}
+h3 .tag{display:inline-block;font-size:8pt;font-weight:500;color:var(--accent-dark);background:var(--accent-soft);border-radius:999px;padding:1px 10px;margin-left:8px;vertical-align:middle;letter-spacing:0}
+p{margin-bottom:10px}
+.q{border-left:2px solid var(--accent);padding:6px 16px;margin:12px 0 18px}
+.q .lab{margin-bottom:4px}
+.q p{margin:0;line-height:1.75}
+table{width:100%;border-collapse:collapse;font-size:9pt;margin:8px 0 12px}
+thead{display:table-header-group}
+tr{break-inside:avoid;page-break-inside:avoid}
+th{text-align:left;font-weight:700;padding:8px 8px;border-bottom:1.5px solid var(--ink);vertical-align:bottom;font-size:8.5pt}
+td{padding:9px 8px;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.55}
+td:first-child{font-weight:700;white-space:nowrap}
+.hl{background:var(--surface-warm)}
+.read{font-size:9pt;color:var(--ink-80);margin:4px 0 16px}
+.read b{color:var(--ink)}
+.hp{background:var(--callout-green);border:1px solid #DCE4D8;border-radius:4px;padding:11px 16px;margin:12px 0 16px;font-size:9.5pt;line-height:1.65}
+.hp b{color:var(--accent-dark);margin-right:6px}
+.flowbox{background:var(--callout);border-radius:4px;padding:16px 20px;margin:14px 0 20px}
+.flowbox .lab{margin-bottom:10px}
+.flow{display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+.chip{background:#fff;border:1px solid var(--line);border-radius:999px;padding:3px 12px;font-size:8.5pt;font-weight:700;white-space:nowrap}
+.chip.dim{color:var(--muted-soft);background:transparent;border-style:dashed;font-weight:500}
+.arr{color:var(--accent);font-size:9pt}
+.flow-lab{font-size:8pt;color:var(--muted);width:78px;flex-shrink:0;font-weight:700}
+.flowbox p{font-size:9pt;color:var(--ink-80);margin:6px 0 0}
+.nums{display:flex;gap:12px;margin:14px 0 20px}
+.num{flex:1;border:1px solid var(--line);border-radius:4px;padding:14px 14px 12px;background:var(--surface)}
+.num b{display:block;font-size:19pt;letter-spacing:-.02em;color:var(--accent-dark);font-weight:700;line-height:1.1;margin-bottom:5px;font-variant-numeric:tabular-nums}
+.num span{font-size:8.5pt;color:var(--muted);line-height:1.5;display:block}
+.qs{margin:6px 0 20px}
+.qs .it{margin-bottom:9px}
+.qs .it b{display:block;font-size:10.5pt}
+.qs .it b em{font-style:normal;color:var(--accent);margin-right:8px;font-size:9pt}
+.qs .it span{display:block;font-size:9pt;color:var(--ink-80);padding-left:26px;line-height:1.6}
+.steps{display:flex;gap:8px}
+.step{flex:1;background:#fff;border:1px solid var(--line);border-radius:4px;padding:9px 10px;font-size:8.5pt;line-height:1.5}
+.step em{font-style:normal;color:var(--accent);font-weight:700;margin-right:4px}
+.final{background:var(--callout);border-radius:4px;padding:14px 20px;margin:16px 0 18px}
+.final p{font-size:10.5pt;font-weight:500;line-height:1.7;margin:0}
+.src{border-top:1px solid var(--line);padding-top:14px;margin-top:10px}
+.src h4{font-size:9.5pt;font-weight:700;margin-bottom:8px;letter-spacing:.02em}
+.src p{font-size:8.5pt;color:var(--ink-80);line-height:1.6;margin-bottom:8px}
+.src ul{list-style:none;font-size:8.5pt;color:var(--muted);line-height:1.75}
+.src ul li span{color:var(--muted-soft)}
+.src a{color:inherit;text-decoration:none}
+.avoid{break-inside:avoid;page-break-inside:avoid}
+.pb{break-before:page;page-break-before:always}
+.mini{font-size:8.5pt;color:var(--muted-soft);margin-top:-6px;margin-bottom:10px}
+.dt{font-weight:400;color:var(--muted-soft)}
+</style>
+<link rel="stylesheet" href="../../assets/reader.css">
+</head><body>
+<div class="nav"><a href="../../">← ARO Case Brief 아카이브</a><a href="brief.pdf">PDF 내려받기</a></div>
+
+<div class="kicker"><span>CASE BRIEF</span><span>ARO · 2026.09</span></div>
+
+<h1>AI로 일이 빨라졌다면, <br>목표도 높여야 할까?</h1>
+<p class="sub">한컴의 AX 평가가 던진 질문, 그리고 줄어든 시간을 목표로 옮기기 전에 HR이 확인할 것</p>
+
+<div class="box avoid"><div class="lab">한 줄 결론</div>
+<p>국내 기업은 AI 활용을 이미 평가와 보상에 넣기 시작했다. 한컴은 전 사원 KPI의 30~50%를, 삼성전자는 임원 평가의 20%를 AX에 배정했다. 그런데 한국은행 분석에서 AI가 줄인 업무시간과 처리량 증가의 상관계수는 0이었고, 직장인 설문에서는 업무량이 늘었다는 응답이 줄었다는 응답보다 많다. HR의 질문은 “AI 활용을 평가에 몇 % 넣을까”가 아니라 “줄어든 시간이 어디로 갔고, 사람에게 남은 일을 무엇으로 셀 것인가”다.</p></div>
+
+<div class="cards avoid">
+<div class="card"><div class="n">01</div><b>사용량보다 남은 일의 구성이 먼저 바뀐다</b><span>AI Usage보다 Remaining Work</span></div>
+<div class="card"><div class="n">02</div><b>절감된 시간보다 그 시간의 행방이 문제다</b><span>Time Saved보다 Time Reallocated</span></div>
+<div class="card"><div class="n">03</div><b>목표 상향보다 ‘한 건’의 기준 재정의가 먼저다</b><span>Target Uplift보다 Definition of Done</span></div>
+</div>
+
+<h2>왜 지금 이 문제를 봐야 하나</h2>
+<p>2026년 8월 아주경제는 판교 기업들이 채용과 인사평가에 AI를 넣는 흐름을 보도했다. 한컴은 2026년부터 전 사원 KPI에 ‘AX를 통한 업무 혁신’ 비중을 30~50% 배정했고, 하반기부터는 기존 성과평가와 별도로 전 임직원 AX 평가를 시행한다. 주목할 것은 기준의 이동이다. 초기에는 AI 활용 시간을 대시보드로 공유했지만, 하반기부터는 사용량이 아니라 업무 개선 정도를 완성도, 확산, 자산화의 세 기준으로 본다. 같은 달 한국일보는 삼성전자가 임원 평가의 AX 비중을 2~5%에서 20%로 올렸다고 보도했다. AI 활용은 이미 평가·보상 항목이 됐고, 선도 기업은 ‘얼마나 썼는가’에서 ‘무엇이 남았는가’로 기준을 옮겼다.</p>
+<p>그런데 측정이 평가를 따라왔다는 증거는 약하다. 한국은행은 근로자의 51.8%가 업무에 생성형 AI를 쓰고 업무시간이 평균 3.8%(주 1.5시간) 줄었다고 추정했지만(2025.08), 2026년 6월 후속 분석에서 업무시간 절감률과 처리량 증가율의 상관계수는 0이었다. 시간은 줄었는데 산출은 늘지 않은 ‘생산성 단절’이다. 직장갑질119 설문(2026.05)에서는 업무량이 늘었다는 응답(26.7%)이 줄었다는 응답(19.1%)보다 많았다. 업계에서도 “사용 횟수나 생성 문서 수에 매달리면 평가가 왜곡될 수 있다”는 우려가 나온다(한국일보).</p>
+
+<div class="q avoid"><div class="lab">이 자료의 질문</div>
+<p>흔한 질문: AI 활용을 평가에 얼마나 반영하고, 빨라진 만큼 목표를 얼마나 올릴 것인가?</p>
+<p>이 브리프의 질문: 줄어든 시간은 어디로 갔고, 남은 일의 ‘한 건’은 도입 전과 같은 한 건인가? 답은 완료 기준과 배정 기준을 다시 정하는 데서 갈린다.</p></div>
+
+<h2 class="num pb"><em>01</em>국내 신호를 겹치면 ‘평가는 앞서고 측정은 뒤처진’ 구조가 보인다</h2>
+<p class="secsub">AI 활용은 이미 평가 항목이 됐다. 그 활용이 산출과 업무량을 어떻게 바꿨는지는 자료마다 다르게 말한다.</p>
+
+<table><thead><tr><th style="width:15%">국내 신호</th><th style="width:47%">확인된 변화</th><th>HR이 읽어야 할 것</th></tr></thead><tbody>
+<tr><td>한컴<br><span class="dt">2026.02 · 2026.08</span></td><td>2026년 전 사원 KPI에 ‘AX를 통한 업무 혁신’ 30~50% 배정. 하반기부터 기존 성과평가와 별도의 AX 평가 시행. 초기의 AI 활용 시간 대시보드에서 완성도·확산·자산화 세 기준으로 전환. 전사 OKR에 AX 목표 30% 이상</td><td>선도 기업도 ‘사용량’에서 출발해 ‘남은 결과’로 기준을 옮겼다. 사용량 지표를 먼저 도입하면 사용량이 최적화된다는 것을 한 번 겪은 셈이다</td></tr>
+<tr><td>삼성전자 · LG CNS<br>· 삼성SDS<br><span class="dt">2026.08</span></td><td>삼성전자 임원 약 2,300명 연말 평가의 AX 역량 비중 2~5%에서 20%로. LG CNS 기술시험 1~5등급, 이듬해 연봉 반영(“주말에도 시간을 내 공부하는 분위기”). 삼성SDS 4단계 AX 인증, 상위 등급에 인센티브·승진 가점</td><td>평가와 보상은 이미 움직인다. 측정 기준이 그보다 늦으면 직원은 ‘보이는 활용’을 최적화하고, 주말 학습 같은 기록되지 않는 시간이 늘어난다</td></tr>
+<tr><td>한국은행<br><span class="dt">2025.08 · 2026.06</span></td><td>취업자 5,512명 조사. 업무 활용 51.8%, 업무시간 평균 3.8%(주 1.5시간) 단축, 잠재 생산성 약 1.0%. 경력이 짧을수록 단축 효과 큼. 후속 분석: 업무시간 절감률과 업무처리량 증가율의 상관계수 0. 성과 유인과 자율성이 높은 집단(자영업자·전문직)에서만 산출 증가</td><td>조직이 회수할 수 있는 시간은 평균 주 1.5시간이고, 그마저 산출로 이어지지 않았다. ‘빨라졌으니 목표를 올린다’의 근거로 삼기에는 작고 불확실하다</td></tr>
+<tr><td>직장갑질119<br><span class="dt">2026.05</span></td><td>직장인 1,000명(2026.02 조사). 직장에 AI가 도입됐거나 도입 중 47.1%. AI 도입 후 업무량 늘었다 26.7%, 줄었다 19.1%, 변화 없다 54.1%. 채용 규모가 줄었다는 인식 52.4%</td><td>시간이 줄어도 업무량은 그대로거나 늘었다는 응답이 많다. 절감분이 추가 업무로 채워진다는 신호다. 인식 조사이므로 실제 시간과는 구분해 읽는다</td></tr>
+<tr><td>워크데이 ·<br>하노버리서치<br><span class="dt">2026.03</span></td><td>국내 직장인 82%가 AI로 주 1~7시간 절감(1~3시간 53%, 4~7시간 29%). 동시에 31%는 AI의 저품질 결과물을 수정·재작성하는 데 주 1~2시간 소요. 69%는 생산성 향상 체감</td><td>절감과 재작업이 같은 사람에게서 동시에 일어난다. 순절감은 총절감보다 작고, 재작업 시간은 어느 대시보드에도 잡히지 않는다</td></tr>
+<tr><td>한국노총<br>중앙연구원<br><span class="dt">2026.01</span></td><td>콜센터 종사자 168명(2025.09~11 조사). AI 도입 후 하루 상담 콜 80건에서 66.1건으로 감소, 건당 통화시간 6.95분에서 7.55분, 건별 후처리 5.59분에서 12.46분, 근무시간 뒤 후처리 21.25분에서 57.94분으로 증가. 근무여건 악화 60.8%, 노사협의 실시 1.5%</td><td>건수는 줄었는데 건당 시간과 근무 뒤 후처리는 늘었다. AI가 쉬운 건을 가져가면 남은 ‘한 건’은 다른 한 건이다. 건수 목표를 그대로 두면 평가가 왜곡된다</td></tr>
+<tr><td>Brynjolfsson 외<br><span class="dt">2023.04 · QJE 2025</span></td><td>미국 한 기업의 고객지원 상담사 5,179명. AI 지원 후 시간당 해결 건수 평균 14% 증가. 초보·저숙련은 34% 증가, 숙련자는 효과 미미. 고객 감정 개선, 이직 감소</td><td>반대 증거. AI가 검증 가능한 처리량을 실제로 늘리는 경우가 있다. 다만 효과는 숙련도에 따라 다르므로 일률적 목표 상향은 이 연구로도 정당화되지 않는다</td></tr>
+</tbody></table>
+<p class="read"><b>읽는 법</b> 자료들이 다른 결론을 내는 이유는 세는 단위가 다르기 때문이다. 한국은행은 ‘시간’, 직장갑질119는 ‘인식된 업무량’, 한국노총은 ‘건수와 후처리’, 워크데이는 ‘자기보고 절감과 재작업’, Brynjolfsson은 ‘검증된 처리량’을 쟀다. 시간 절감은 처리량 증가와 같지 않고, 처리량 증가는 업무량 감소와 같지 않다. 정확한 해석은 “AI는 개인의 시간을 줄이지만 그 시간이 조직의 산출로 옮겨갔다는 증거는 약하고, 사람에게 남은 일은 건당 부담이 커지는 경향이 있다”다.</p>
+
+<div class="hp avoid"><b>HR POINT ①</b>목표를 올릴 근거가 될 수 있는 수치는 ‘검토를 통과한 완료 건수’뿐이다. AI 사용 시간, 자기보고 절감 시간, 초안 생산량은 근거가 아니다. 한컴이 사용량 대시보드에서 완성도·확산·자산화로 옮긴 것은 이 순서를 보여준다. 다만 그 세 기준도 ‘무엇을 한 건으로 볼지’를 정하지 않으면 다시 문서 수 세기로 돌아간다.</div>
+
+<div class="avoid"><h3>기대와 측정의 간극은 한국만의 현상이 아니다 <span class="tag">Upwork · Microsoft</span></h3>
+<p>Upwork 연구소는 2024년 7월 미국·영국·호주·캐나다의 경영진 1,250명과 직원 1,250명을 조사했다. 경영진의 96%는 AI가 생산성을 높일 것으로 기대했지만, AI를 쓰는 직원의 77%는 AI가 업무량을 늘렸다고 답했다. 늘어난 일의 내용은 AI 결과물 검토·수정(39%), 도구 학습(23%), AI를 이유로 한 추가 업무 요구(21%)였다. 경영진의 81%는 지난 1년간 직원에게 더 많은 산출을 요구했다고 답했고, 직원의 71%는 번아웃을 겪고 있었다. Microsoft는 2025년 6월 Microsoft 365 사용 신호와 31개국 3만 1천 명 조사로 ‘끝없는 근무일’을 보고했다. 핵심 근무시간에 2분마다, 하루 275회 방해가 발생하고, 오후 8시 이후 회의는 전년 대비 16% 늘었으며, 직원 3명 중 1명은 지난 5년간 일의 속도를 따라가기가 불가능해졌다고 답했다. 보고서는 일의 리듬을 다시 설계하지 않으면 “AI로 망가진 시스템을 가속하게 된다”고 썼다.</p>
+<p class="mini">다른 나라, 다른 데이터에서 같은 순서가 반복된다. 경영진의 기대 → 목표 상향 → 검토·학습 부담 증가 → 근무시간 밖으로 넘침.</p></div>
+
+<div class="avoid"><h2 class="num"><em>02</em>줄어든 시간은 사라지지 않는다, 자리를 옮긴다</h2>
+<p class="secsub">시간 절감이 산출로 이어지지 않는 이유를 네 갈래로 나눠 본다</p>
+<p>AI가 줄이는 것은 대개 한 업무의 앞부분이다. 초안 작성, 자료 정리, 1차 응대가 그렇다. 그 뒤에는 검토, 예외 처리, 수정, 이해관계자 협의가 남는다. 이 뒷부분은 AI 도입 전에도 있었지만, 앞부분이 빨라지면서 상대적으로 커지고, 초안이 많아지면서 절대량도 는다. 한국노총 콜센터 조사에서 건별 후처리가 5.59분에서 12.46분으로 두 배 넘게 늘어난 것이 이 구조다. 문제는 대부분의 조직이 앞부분의 단축만 재고 뒷부분의 증가는 재지 않는다는 점이다.</p></div>
+
+<div class="flowbox avoid"><div class="lab">절감된 시간의 네 갈래: 기대 경로 vs 실제 경로</div>
+<div class="flow"><span class="flow-lab">기대</span><span class="chip">AI 도입</span><span class="arr">→</span><span class="chip">처리시간 단축</span><span class="arr">→</span><span class="chip">여유 시간</span><span class="arr">→</span><span class="chip">산출 증가 · 학습</span></div>
+<div class="flow"><span class="flow-lab">실제</span><span class="chip">AI 도입</span><span class="arr">→</span><span class="chip">초안 · 1차 처리 단축</span><span class="arr">→</span><span class="chip dim">검토 · 재작업 증가</span><span class="arr">→</span><span class="chip dim">추가 업무 배정</span><span class="arr">→</span><span class="chip">건당 난이도 상승</span><span class="arr">→</span><span class="chip">목표는 건수 그대로</span></div>
+<p>점선 칩이 대부분의 조직에서 측정되지 않는 구간이다. 절감된 시간은 네 곳으로 간다. ① AI 결과물의 검토와 수정(워크데이 31%, Upwork 39%), ② 도구 학습(Upwork 23%, LG CNS의 ‘주말 공부’), ③ 추가 업무(Upwork 21%, 직장갑질119 26.7%), ④ 대기와 병목(한국은행이 상관계수 0의 배경으로 지목한 프로세스와 조직 구조의 경직성). 어느 갈래로 얼마나 갔는지 모르면 목표를 올릴 근거도, 올리지 않을 근거도 없다. 네 갈래의 배분은 입증된 사실이 아니라 자료를 연결한 HR 시나리오다.</p></div>
+
+<div class="avoid"><h3>사용량 평가의 순환</h3>
+<table><thead><tr><th style="width:15%">주체</th><th style="width:47%">행동</th><th>결과</th></tr></thead><tbody>
+<tr><td>기업</td><td>AI 활용을 평가·보상에 반영한다 (한컴 KPI 30~50%, 삼성전자 임원 20%)</td><td>직원은 평가 기준에 맞춰 행동한다</td></tr>
+<tr><td>직원</td><td>사용 시간, 생성 문서 수처럼 보이는 지표를 최적화한다</td><td>초안과 산출물의 양이 는다</td></tr>
+<tr><td>동료 · 수신자</td><td>검토와 재작업 부담이 다음 사람에게 넘어간다 (BetterUp·Stanford: 40%가 지난달 저품질 AI 산출물을 받았고 건당 약 2시간 소요)</td><td>절감은 만든 사람에게, 비용은 받는 사람에게 간다</td></tr>
+<tr><td>기업</td><td>개인 효율은 올랐는데 조직 산출은 그대로다 (한국은행 상관계수 0)</td><td>다시 ‘더 많이 쓰라’는 압박으로 돌아간다</td></tr>
+</tbody></table></div>
+
+<div class="hp avoid"><b>HR POINT ②</b>AI 사용량을 개인 KPI로 보상하는 순간, 조직은 검토 부담의 전가를 보상하는 셈이 된다. BetterUp과 Stanford의 조사(2025.09, 미국 사무직 1,150명)에서 40%가 지난 한 달 사이 그럴듯하지만 실속 없는 AI 산출물을 받았고, 처리에 건당 평균 2시간이 들었다. 한컴이 ‘다른 조직으로의 확산’과 ‘자산으로 남았는가’를 기준에 넣은 것은 이 전가를 막는 장치로 읽을 수 있다. 다만 확산과 자산화를 누가 어떤 증거로 판정하는지는 공개되지 않았다.</div>
+
+<div class="hp avoid"><b>HR POINT ③</b>자기보고 절감 시간은 목표 산정의 근거가 되지 못한다. METR의 무작위 실험(2025.07)에서 숙련 오픈소스 개발자 16명은 AI를 쓸 때 과제 완료에 19% 더 오래 걸렸지만, 실험 뒤에도 20% 빨라졌다고 믿었다. 표본은 작지만 방향은 분명하다. 82%가 주 1~7시간을 아꼈다고 답한 워크데이 설문은 체감이지 측정이 아니다.</div>
+
+<div class="avoid"><h2 class="num"><em>03</em>숫자 4개와 HR이 바꿀 지표</h2>
+<p class="secsub">‘얼마나 썼는가’에서 ‘무엇이 남았고 누가 감당하는가’로 지표를 옮긴다</p>
+<div class="nums avoid">
+<div class="num"><b>30~50%</b><span>한컴 2026년 전 사원 KPI 중 AX 업무 혁신 비중 (한컴 실적 발표, 2026.02)</span></div>
+<div class="num"><b>0</b><span>AI로 줄인 업무시간 절감률과 업무처리량 증가율의 상관계수 (한국은행, 2026.06)</span></div>
+<div class="num"><b>26.7%</b><span>AI 도입 후 업무량이 늘었다는 응답. 줄었다는 19.1% (직장갑질119, 2026.05)</span></div>
+<div class="num"><b>12.46분</b><span>AI 도입 후 콜센터 건별 후처리 시간. 도입 전 5.59분 (한국노총 중앙연구원, 2026.01)</span></div>
+</div></div>
+
+<p>국내 기업의 현재 위치는 이렇다. 평가는 ‘활용’에서 ‘결과’로 옮겨가는 중이고, 측정은 아직 ‘사용량과 절감 시간’에 머물러 있다. 이 간극에서 HR이 먼저 정할 것은 두 가지다. 하나는 AI 이후 ‘한 건’의 정의다. 콜센터의 66건은 80건과 같은 건이 아니고, 채용의 JD 초안 10건은 현업 승인을 받은 JD 10건이 아니다. 다른 하나는 절감된 시간의 행방을 기록하는 것이다. 이 둘이 없으면 목표 상향에도 근거가 없고, 목표 동결에도 근거가 없다.</p>
+
+<div class="avoid"><h3>HR이 바꿀 지표</h3>
+<table><thead><tr><th style="width:14%">영역</th><th style="width:32%">기존 관리</th><th class="hl">추가로 볼 것</th></tr></thead><tbody>
+<tr><td>성과 목표</td><td>처리 건수, 처리 시간, 전년 대비 증가율</td><td class="hl">검토를 통과한 완료 건수. 건당 난이도 구성(AI가 가져간 쉬운 건과 사람에게 남은 어려운 건). 재작업률</td></tr>
+<tr><td>AI 활용 평가</td><td>사용 시간, 사용 횟수, 생성 문서 수</td><td class="hl">결과물이 다음 사람에게 넘긴 검토 시간. 다른 팀이 실제로 재사용했는가. 3개월 뒤에도 쓰이는가(한컴의 확산·자산화 기준)</td></tr>
+<tr><td>업무 배정</td><td>빨리 끝낸 사람에게 다음 일</td><td class="hl">절감된 시간의 행방(검토·학습·추가 업무·대기)을 분기마다 기록. 추가 배정은 완료 건수와 재작업률이 안정된 뒤에</td></tr>
+<tr><td>근로시간</td><td>출퇴근 기록, 연장근로 신청</td><td class="hl">근무시간 밖 후처리(콜센터 하루 58분), 오후 8시 이후 회의, 주말 학습. 포괄임금 사업장에서는 이 시간이 어디에도 기록되지 않는다</td></tr>
+<tr><td>숙련도</td><td>직급별 동일 목표</td><td class="hl">경력별 AI 효과 차이(한국은행: 경력 짧을수록 단축 큼, Brynjolfsson: 초보자 34%, 숙련자 미미). 신입의 목표를 숙련자 기준으로 올리지 않는다</td></tr>
+</tbody></table></div>
+
+<div class="hp avoid"><b>HR POINT ④</b>목표를 다시 정하는 순서는 네 단계다. ① 같은 유형, 같은 완료 기준의 일을 묶는다. ② 도입 전후의 완료 건수와 재작업률을 비교한다. ③ 근무시간 밖 후처리와 절감 시간의 행방을 확인해 반복 가능한 범위를 정한다. ④ 그 범위 안에서만 목표를 조정하고 한 분기 뒤 다시 본다. 이 순서는 검증된 표준이 아니라 이 브리프의 제안이다.</div>
+
+<div class="avoid"><h2 class="num"><em>04</em>HR 리더가 지금 점검할 질문</h2>
+<p class="secsub">정답을 정하기보다 각 조직의 현재 수준과 다음 선택을 점검하기 위한 질문</p>
+<div class="qs">
+<div class="it"><b><em>01</em>우리 회사에서 AI 도입 뒤의 ‘한 건’은 도입 전의 한 건과 같은가?</b><span>AI가 쉬운 건을 가져갔다면 남은 건수는 줄어도 건당 부담은 늘었을 수 있다. 콜센터의 80건과 66건이 그렇다.</span></div>
+<div class="it"><b><em>02</em>AI로 줄어든 시간이 어디로 갔는지 한 줄이라도 기록하고 있는가?</b><span>기록이 없으면 한국은행의 상관계수 0이 우리 조직의 숫자인지 알 수 없다.</span></div>
+<div class="it"><b><em>03</em>AI 활용 평가의 기준은 사용량인가, 다음 사람에게 넘어간 검토 시간인가?</b><span>사용량을 보상하면 검토 부담의 전가를 보상하게 된다. 한컴은 이 이유로 기준을 한 번 옮겼다.</span></div>
+<div class="it"><b><em>04</em>빨리 끝낸 직원에게 다음 일을 주는 판단은 누가, 무엇을 근거로 하는가?</b><span>완료 건수와 재작업률이 안정되기 전의 추가 배정은 일시적 과부하를 다음 분기의 표준으로 굳힌다.</span></div>
+<div class="it"><b><em>05</em>근무시간 밖으로 밀려난 후처리와 학습 시간을 우리는 볼 수 있는가?</b><span>포괄임금과 재량근로 사업장에서는 이 시간이 어떤 기록에도 남지 않는다. AI 도입 전 노사협의를 거친 콜센터는 1.5%였다.</span></div>
+</div></div>
+
+<div class="flowbox avoid"><div class="lab">참고: 작은 진단을 한다면</div>
+<div class="steps">
+<div class="step"><em>1</em>반복 업무 하나를 고른다 (채용, 정산, 상담 중 하나)</div>
+<div class="step"><em>2</em>도입 전후의 완료 건수와 재작업률을 뽑는다</div>
+<div class="step"><em>3</em>담당자 5명에게 절감된 시간의 행방을 묻는다</div>
+<div class="step"><em>4</em>근무시간 밖 후처리를 2주간 기록한다</div>
+<div class="step"><em>5</em>목표 조정 전에 지표 하나(재작업률)를 먼저 추가한다</div>
+</div></div>
+
+<div class="final avoid"><div class="lab">FINAL INSIGHT</div>
+<p>AI로 일이 빨라졌다는 사실은 목표를 올릴 근거가 아니다. 개인 시간↓ → 검토·재작업·추가 배정↑ → 조직 산출은 그대로 → 남은 사람의 건당 부담↑라는 구조가 국내외 자료에서 반복된다. HR의 역할은 AI 활용을 평가에 몇 % 넣을지 정하는 것이 아니라, AI 이후의 ‘한 건’을 다시 정의하고 줄어든 시간의 행방을 조직이 볼 수 있게 만드는 것이다.</p></div>
+
+<div class="src avoid">
+<h4>자료 출처 및 해석 유의사항</h4>
+<p>인과 미확정: 한국은행의 상관계수 0은 시간 절감이 산출 증가로 이어지지 않았다는 관찰이며, 그 원인(추가 업무, 대기, 재작업)의 배분은 입증되지 않았다. 직장갑질119와 워크데이 조사는 인식 조사이고, 한국노총 조사는 168명의 소표본이며 AI 도입 외 요인(인력 축소)을 분리하지 않았다. 한컴의 KPI 30~50%(2월 실적 발표)와 OKR 30% 이상·별도 AX 평가(8월 보도)가 같은 제도인지, 개인 평가에서의 실제 배점은 공개자료에서 확인되지 않아 두 수치를 합산하지 않았다. Brynjolfsson 연구의 수치는 2023년 4월 초판 기준이며 이후 개정판에서 표본과 수치가 소폭 조정됐다. 삼성전자 임원 수 약 2,300명은 보도 기준이다. 한국일보 기사는 게재일 표시가 8월 13일과 17일로 달라 월까지만 적었다.</p>
+<ul>
+<li><a href="https://www.ajunews.com/view/20260827144955983">아주경제, 「판교는 지금…채용도 인사평가도 AI」</a> <span>(2026.08.27)</span></li>
+<li><a href="https://zdnet.co.kr/view/?no=20260223162916">한글과컴퓨터 2025년 실적 발표, ZDNet Korea 「한컴, 2025년 사상 최대 실적...‘글로벌 AI 오케스트레이션’ 기업 선언」</a> <span>(2026.02.23)</span></li>
+<li><a href="https://www.hankookilbo.com/news/article/A2026081315120002571">한국일보, 「임원도 기술 테스트, 인사평가 3할이 AI... 외국어보다 AI 능력 쳐주는 기업들」</a> <span>(2026.08)</span></li>
+<li><a href="https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10093071&amp;menuNo=200433">한국은행, BOK 이슈노트 제2025-22호 「AI의 빠른 확산과 생산성 효과: 가계조사를 바탕으로」</a> <span>(2025.08)</span></li>
+<li><a href="https://www.bok.or.kr/portal/bbs/P0002353/view.do?nttId=10098322&amp;menuNo=200433">한국은행, BOK 이슈노트 제2026-12호 「AI 도입은 생산성을 높이는가? 초기 3년의 효과 분석」</a> <span>(2026.06.08)</span></li>
+<li><a href="https://www.newsis.com/view/NISX20260501_0003614477">직장갑질119, 「AI 업무 영향」 설문(글로벌리서치, 직장인 1,000명, 2026.02.02~08), 뉴시스 보도</a> <span>(2026.05.03)</span></li>
+<li><a href="https://www.hankyung.com/article/202603113652g">워크데이·하노버리서치 조사, 한국경제 「AI 썼더니 일 더 늘었다…직장인들 재작업 세금에 진땀」</a> <span>(2026.03.11)</span></li>
+<li><a href="https://www.labortoday.co.kr/news/articleView.html?idxno=232368">한국노총 중앙연구원, 콜센터 AI 도입 실태조사(168명, 2025.09.02~11.21), 매일노동뉴스 「AI 썼더니, 콜센터 근무시간 뒤 “후처리만 1시간”」</a> <span>(2026.01.22)</span></li>
+<li><a href="https://www.nber.org/papers/w31161">Brynjolfsson, Li, Raymond, “Generative AI at Work”, NBER Working Paper 31161</a> <span>(2023.04, QJE 2025 게재)</span></li>
+<li><a href="https://investors.upwork.com/news-releases/news-release-details/upwork-study-finds-employee-workloads-rising-despite-increased-c">Upwork Research Institute, “Upwork Study Finds Employee Workloads Rising Despite Increased C-Suite Investment in AI”</a> <span>(2024.07)</span></li>
+<li><a href="https://www.microsoft.com/en-us/worklab/work-trend-index/breaking-down-infinite-workday">Microsoft WorkLab, Work Trend Index Special Report “Breaking Down the Infinite Workday”</a> <span>(2025.06.17)</span></li>
+<li><a href="https://hbr.org/2025/09/ai-generated-workslop-is-destroying-productivity">BetterUp Labs · Stanford Social Media Lab, “AI-Generated ‘Workslop’ Is Destroying Productivity”, Harvard Business Review</a> <span>(2025.09)</span></li>
+<li><a href="https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/">METR, “Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity”</a> <span>(2025.07.10)</span></li>
+</ul>
+<p style="margin-top:12px">함께 읽기: <a href="../2026-09-09-work-redesign/" style="color:var(--accent-dark)">AI 도입 뒤의 문제는 ‘더 잘 쓰는 법’이 아니라 일을 그대로 둔 채 AI만 얹었다는 데 있을 수 있다</a> (2026.09). “개인은 빨라졌는데 조직은 그대로”의 구조를 다룬 앞 편이다. 이번 편은 그 간극이 목표와 업무량 관리에서 어떻게 나타나는지를 본다. <a href="../2026-09-07-career-ladder/" style="color:var(--accent-dark)">AI가 먼저 없애는 것은 ‘사람’이 아니라 신입이 숙련자로 성장하던 과정일 수 있다</a> (2026.09). 경력이 짧을수록 AI 효과가 크다는 같은 자료를 신입의 성장 경로 관점에서 읽는다.</p>
+</div>
+<script src="../../assets/reader.js"></script>
+</body></html>
