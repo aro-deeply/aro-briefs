@@ -15,9 +15,16 @@ git add -A && git commit -m "brief: slug" && git push
 
 ## 웹 판 변환 규칙 (PDF용 HTML → 웹용 index.html)
 
+`scripts/make_web.py`가 아래 1~6을 자동으로 적용한다. 손으로 할 때의 규칙은 다음과 같다.
+
+```bash
+python3 scripts/make_web.py ../work/<slug>/brief.html briefs/<slug>/ --title "제목" [--together together.html]
+```
+
 1. `@font-face` 로컬 폰트 줄을 지우고 `<style>` 앞에 CDN 링크를 넣는다.
    `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">`
-2. `<title>제목 · ARO Case Brief</title>`, viewport 메타 추가.
+2. `<title>제목 · ARO Case Brief</title>`, viewport 메타, PWA 메타 추가.
+   `<link rel="manifest" href="/aro-briefs/manifest.json">`, `<meta name="theme-color" content="#FAFAF7">`, `<link rel="apple-touch-icon" href="/aro-briefs/assets/icons/apple-touch-icon.png">`, `<link rel="icon" type="image/png" sizes="192x192" href="/aro-briefs/assets/icons/icon-192.png">`
 3. `html,body{` 앞에 화면용 스타일을 추가한다.
    `@media screen{body{max-width:860px;margin:0 auto;padding:40px 24px 80px;background:#FAFAF7}.pb{break-before:auto}.nav{display:flex;justify-content:space-between;font-size:9pt;color:var(--muted);margin-bottom:18px}.nav a{color:var(--accent-dark);text-decoration:none;border-bottom:1px solid var(--line)}}@media print{.nav{display:none}}`
 4. `<body>` 바로 아래에 nav를 넣는다.
